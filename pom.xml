@@ -7,7 +7,7 @@
     <packaging>jar</packaging>
 
     <groupId>org.example</groupId>
-    <artifactId>SeleniumHelloWorld</artifactId>
+    <artifactId>selenium-hello-world</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>SeleniumHelloWorld</name>
@@ -19,33 +19,11 @@
     </properties>
 
     <dependencies>
-        <!--<version>3.141.59</version>-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.31.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>4.31.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <!-- Future versions of SLF4J will not work with Java 1.8 -->
-            <!--suppress MavenPackageUpdate -->
-            <version>1.7.36</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.20.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.20.0</version>
+            <version>4.48.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
@@ -86,10 +64,9 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>3.0.0</version>
                     <configuration>
-                        <source>1.8</source>
+                        <source>21</source>
                     </configuration>
                 </plugin>
-                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.0.2</version>
